@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#marquee{
+  height: 2rem;
+  white-space: nowrap;
+  animation: marquee 120s linear infinite;
+}
+
+#marquee:hover {
+   animation-play-state: paused;
+}
+
+.container{
+  width: 60%;
+}
+
+ul {
+  padding-left: 0;
+}
+
+.list-group-flush > .list-group-item:last-child {
+  border-bottom-width: 1px;
+}
+
+.spinner-border {
+  position: relative;
+  top: 50%;
+  left: 45%;
+}
+
+a:hover, a:visited, a:link, a:active {
+  text-decoration: none;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-500%); }
+}
